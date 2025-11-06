@@ -11,9 +11,17 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
     const datiUtente = datiInput.value;
     const kmViaggio = kmInput.value;
-    console.log("Nome e cognome:", datiUtente);
-    console.log("Km da percorrere:", kmViaggio);
-
+    const kmBase = 0.21
+    const kmPrezzo = parseInt(kmViaggio) * kmBase;
+    let sconto = "";
+if (etaUtente <= 18) {
+    sconto = 0.2;
+} else if (etaUtente >= 65) {
+    sconto = 0.4;
+}
+const prezzoFinale = kmPrezzo * (1 - sconto);
+const risultato = `Il prezzo del biglietto è di ${prezzoFinale.toFixed(2)}€`;
+console.log(kmBase);
 });
 
 
