@@ -23,17 +23,28 @@
                     <!-- km -->
                     <label for="percorrenza">Km da percorrere</label>
                     <input type="number" name="" id="percorrenza" placeholder="Digita distanza da percorrere" required>
-                
-                
-                <!-- inizio bottoni -->
-                 <button id="genera" type="submit">Genera</button>
+                    <!-- età -->
+                    <label for="fasciaeta">La tua fascia d'età</label>
+                    <select id="fasciaeta" required>
+                        <option value="Minorenne">Minorenne &#40;&lt;&#61;18&#41;</option>
+                        <option value="Adulto">Fascia media &#40;tra i 19 e 64 anni&#41;</option>
+                        <option value="Over65">Over65 </option>
+                    </select>
 
-                 </form>
-                <!-- fine bottoni -->
+                    <!-- inizio bottoni -->
+                    <button id="genera" type="submit">Genera</button>
+                    <button>Annulla</button>
+                    <!-- fine bottoni -->
+                </form>
+
                 <!-- fine sezione form -->
             </div>
+            <!-- inizio risultato -->
+            <div class="col">IL TUO BIGLIETTO
 
-    <script src="./js/script.js"></script>
+            </div>
+            <!-- fine risultato -->
+            <script src="./js/script.js"></script>
 </body>
 
 </html>
