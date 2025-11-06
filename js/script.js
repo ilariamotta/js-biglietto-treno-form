@@ -56,6 +56,12 @@ form.addEventListener("submit", function (event) {
                 <span class="costoBigl">${prezzoFinale.toFixed(2)}€</span>
                 </div>
             </div>`
+section.classList.remove("d-none");
+});
+
+form.addEventListener("reset", function() {
+        section.classList.add("d-none");
+        section.innerHTML = "";
 });
 
 
