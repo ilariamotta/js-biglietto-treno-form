@@ -16,7 +16,8 @@ form.addEventListener("submit", function (event) {
     const datiUtente = datiInput.value;
     const kmViaggio = kmInput.value;
     const etaUtente = etaInput.value;
-    console.log(etaUtente);
+    const numCp = Math.floor(Math.random() * 100000) + 1;
+    const numCar = Math.floor(Math.random() * 10) + 1;
     const kmBase = 0.21
     const kmPrezzo = parseInt(kmViaggio) * kmBase;
     let sconto = "";
@@ -40,15 +41,15 @@ form.addEventListener("submit", function (event) {
                 </div>
                 <div class="col-2">
                     <h5>Offerta</h5>
-                    <span class="tipoBigl"></span>
+                    <span class="tipoBigl">${etaUtente}</span>
                 </div>
                 <div class="col-2">
                 <h5>Carrozza</h5>
-                <span class="nCarrozza"></span>
+                <span class="nCarrozza">${numCar}</span>
                 </div>
                 <div class="col-2">
                 <h5>Codice CP</h5>
-                <span class="codCp"></span>
+                <span class="codCp">${numCp}</span>
                 </div>
                 <div class="col-2">
                 <h5>Costo Biglietto</h5>
@@ -56,6 +57,8 @@ form.addEventListener("submit", function (event) {
                 </div>
             </div>`
 });
+
+
 
 
 
