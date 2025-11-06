@@ -14,28 +14,30 @@
     <div class="container">
         <div class="row">
             <!-- sezione form -->
-            <h1>CALCOLO PREZZO BIGLIETTO</h1>
+            <h1 class="my-4 rounded-pill bg-danger text-light">CALCOLO PREZZO BIGLIETTO</h1>
             <div class="col">
                 <form action="">
                     <!-- nomecognome -->
-                    <label for="anagrafica" class="form-label">Nome e Cognome</label>
+                    <label for="anagrafica" class="form-label text-muted my-2">Nome e Cognome</label>
                     <input type="text" class="form-control" id="anagrafica" placeholder="Digita nome e cognome"
                         required>
                     <!-- km -->
-                    <label for="percorrenza" class="form-label">Km da percorrere</label>
+                    <label for="percorrenza" class="form-label text-muted my-2">Km da percorrere</label>
                     <input type="number" class="form-control" name="" id="percorrenza"
                         placeholder="Digita distanza da percorrere" required>
                     <!-- età -->
-                    <label for="fasciaeta" class="form-label">La tua fascia d'età</label>
+                    <label for="fasciaeta" class="form-label text-muted my-2">La tua fascia d'età</label>
                     <select id="fasciaeta" class="form-select">
+                        <option selected>Scegli la tua fascia d'età</option>
                         <option value="Minorenne">Minorenne &#40;&lt;&#61;18&#41;</option>
                         <option value="Adulto">Fascia media &#40;tra i 19 e 64 anni&#41;</option>
                         <option value="Over65">Over65 </option>
                     </select>
 
                     <!-- inizio bottoni -->
-                    <div class="col d-flex justify-content-center mt-4 column-gap-3"><button id="genera" type="submit" class="btn btn-primary">Genera</button>
-                    <button type="reset" id="annulla" class="btn btn-danger">Annulla</button>
+                    <div class="col d-flex justify-content-center mt-4 column-gap-3"><button id="genera" type="submit"
+                            class="btn btn-secondary">Genera</button>
+                        <button type="reset" id="annulla" class="btn btn-light">Annulla</button>
                     </div>
                     <!-- fine bottoni -->
                 </form>
@@ -44,31 +46,33 @@
             </div>
             <!-- inizio risultato -->
             <section class="mt-4 p-3 d-none">
-                <div class="row d-flex justify-content-center bg-info rounded">
-                <h2 class="bg-primary rounded-pill mt-2">IL TUO BIGLIETTO</h2>
-                <div class="col-4">
-                    <h3>Dettaglio passeggeri</h3>
-                    <h4 class="">NOME PASSEGGERO</h4>
-                    <span class="nome">nome passeggero</span>
+                <div class="row d-flex justify-content-center bg-light rounded">
+                    <h2 class="bg-success rounded py-2">IL TUO BIGLIETTO</h2>
+                    <div class="col-4">
+
+                        <h4>NOME PASSEGGERO</h4>
+                        <span class="nome">nome passeggero</span>
+                    </div>
+                    <div class="col-2">
+                        <h5>Offerta</h5>
+                        <span class="tipoBigl">tipo biglietto</span>
+                    </div>
+                    <div class="col-2">
+                        <h5>Carrozza</h5>
+                        <span class="nCarrozza">numero carrozza</span>
+                    </div>
+                    <div class="col-2">
+                        <h5>Codice CP</h5>
+                        <span class="codCp">codice cp</span>
+                    </div>
+                    <div class="col-2">
+                        <h5>Costo Biglietto</h5>
+                        <span class="costoBigl">costo biglietto</span>
+                    </div>
+                    <div class="col-12 bg-danger rounded py-1 display-6"><strong>Buon Viaggio!</strong></div>
                 </div>
-                <div class="col-2">
-                    <h5>Offerta</h5>
-                    <span class="tipoBigl">tipo biglietto</span>
-                </div>
-                <div class="col-2">
-                <h5>Carrozza</h5>
-                <span class="nCarrozza">numero carrozza</span>
-                </div>
-                <div class="col-2">
-                <h5>Codice CP</h5>
-                <span class="codCp">codice cp</span>
-                </div>
-                <div class="col-2">
-                <h5>Costo Biglietto</h5>
-                <span class="costoBigl">costo biglietto</span>
-                </div>
-            </div>
             </section>
+            <div class="col-12"><img src="https://www.wikihow.com/images/0/09/Draw-a-Train-Step-15.jpg" alt=""></div>
             <!-- fine risultato -->
             <script src="./js/script.js"></script>
 </body>
